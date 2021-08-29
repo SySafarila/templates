@@ -1,0 +1,57 @@
+/* Font | Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+  }
+
+  .poppins-extra-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  .poppins-semi-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .poppins-semi-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  .poppins-extra-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+  }
+
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+  }
+
+  .menu-active {
+    @apply poppins-medium text-gray-800;
+  }
+}
