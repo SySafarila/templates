@@ -1,6 +1,9 @@
 /* Font | Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Google Icons */
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
