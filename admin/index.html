@@ -32,7 +32,7 @@
         z-50
       "
     >
-      <div class="flex items-center left md:space-x-0 space-x-2">
+      <div class="flex items-center md:space-x-0 space-x-2" id="left-navbar">
         <span class="material-icons md:hidden" id="sidebar-toggle">menu</span>
         <div class="flex gap-2">
           <span>Brand</span>
@@ -40,13 +40,14 @@
           <a href="#" class="hover:text-black">Main</a>
         </div>
       </div>
-      <div class="flex gap-2 items-center right">
-        <button type="button" class="hover:text-black material-icons-round">
+      <div class="flex gap-2 items-center" id="right-navbar">
+        <button type="button" class="hover:text-black material-icons-round" id="navbar-right-help">
           help_outline
         </button>
         <button type="button" class="hover:text-black material-icons-round">
           logout
         </button>
+        <span class="-ml-7 absolute bg-gray-500 mt-14 px-1.5 rounded text-gray-200 text-xs whitespace-nowrap py-0.5 hidden" id="navbar-right-help-center">Help center</span>
       </div>
     </nav>
     <!-- Navbar : End -->
@@ -479,6 +480,7 @@
     <!-- Main : End -->
     <!-- Scripts : Start -->
     <script src="./scripts/sidebar-toggle.js"></script>
+    <script src="./scripts/navbar-help.js"></script>
     <!-- Scripts : ENd -->
   </body>
 </html>
