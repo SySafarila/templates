@@ -7,7 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-gray-100 overflow-hidden poppins tap-highlight-transparent text-gray-500">
+  <body
+    class="
+      bg-gray-100
+      overflow-hidden
+      poppins
+      tap-highlight-transparent
+      text-gray-500
+    "
+  >
+    <!-- Navbar : Start -->
     <nav
       id="navbar"
       class="
@@ -23,66 +32,107 @@
         z-50
       "
     >
-    <div class="flex items-center left md:space-x-0 space-x-3">
+      <div class="flex items-center left md:space-x-0 space-x-2">
         <span class="material-icons md:hidden" id="sidebar-toggle">menu</span>
-        <div class="flex space-x-3">
-            <span>Brand</span>
-            <span>Quick</span>
+        <div class="flex gap-2">
+          <span>Brand</span>
+          <span class="cursor-default">|</span>
+          <a href="#" class="hover:text-black">Main</a>
         </div>
       </div>
-      <div class="flex items-center right space-x-3">
-        <button type="button" class="hover:text-black material-icons">search</button>
-        <button type="button" class="hover:text-black material-icons">fingerprint</button>
+      <div class="flex gap-2 items-center right">
+        <button type="button" class="hover:text-black material-icons-round">
+          help_outline
+        </button>
+        <button type="button" class="hover:text-black material-icons-round">
+          logout
+        </button>
       </div>
     </nav>
+    <!-- Navbar : End -->
+    <!-- Sidebar : Start -->
     <div
       id="sidebar"
       class="
-      bg-white bottom-0 custom-scroll fixed hidden flex-col md:flex md:shadow overflow-x-hidden overflow-y-auto overscroll-none shadow-lg w-56 z-40
+        bg-white
+        bottom-0
+        custom-scroll
+        fixed
+        hidden
+        flex-col
+        md:flex md:shadow
+        overflow-x-hidden overflow-y-auto
+        overscroll-none
+        shadow-lg
+        w-56
+        z-40
       "
       style="height: calc(100% - 3rem)"
     >
-      <div id="account" class="border-b flex items-center px-4 py-4 space-x-1.5">
-        <div class="bg-gray-200 h-5 rounded-full w-5"></div>
-        <span class="truncate w-3/4 whitespace-nowrap">Syahrul SafarilaSyahrul SafarilaSyahrul Safarila</span>
+      <div
+        id="account"
+        class="border-b flex gap-2 items-center px-4 py-4"
+      >
+        <div class="bg-gray-500 flex-shrink-0 h-5 rounded-full w-5"></div>
+        <span class="truncate"
+          >Syahrul SafarilaSyahrul SafarilaSyahrul Safarila</span
+        >
       </div>
-      <span class="bg-gray-200 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <span class="hover:bg-gray-100 my-1 px-4 py-2">Sidebar menu</span>
-      <div class="border-t flex flex-wrap px-4 py-3 space-x-1 text-xs" id="copyright">
-        <span>© 2020</span>
-        <span>SySafarila</span>
+      <!-- <span class="bg-gray-200 my-1 px-4 py-2">Sidebar menu</span> -->
+      <span class="flex gap-2 hover:bg-gray-100 items-center my-1 px-4 py-2">
+        <span class="material-icons">article</span>
+        <span>Blog</span>
+      </span>
+      <span class="flex gap-2 hover:bg-gray-100 items-center my-1 px-4 py-2">
+        <span class="material-icons">turned_in</span>
+        <span>Lessons</span>
+      </span>
+      <span class="flex gap-2 hover:bg-gray-100 items-center my-1 px-4 py-2">
+        <span class="material-icons">auto_stories</span>
+        <span>Libraries</span>
+      </span>
+      <span class="flex gap-2 hover:bg-gray-100 items-center my-1 px-4 py-2">
+        <span class="material-icons">school</span>
+        <span>University</span>
+      </span>
+      <div
+        class="border-t flex flex-wrap gap-x-2 gap-y-1 px-4 py-3 text-xs"
+        id="copyright"
+      >
+        <span>© 2020 SySafarila</span>
         <span>TOS</span>
         <span>Privacy Policy</span>
       </div>
     </div>
-    <main class="bottom-0 custom-scroll fixed md:left-56 overflow-y-auto md:overflow-y-auto p-4" style="height: calc(100% - 3rem)" id="main">
-      <div id="breadcrumbs" class="bg-white flex mb-3 px-4 py-3 rounded-md shadow space-x-2.5 text-xs">
+    <!-- Sidebar : End -->
+    <!-- Main : Start -->
+    <main
+      class="
+        bottom-0
+        custom-scroll
+        fixed
+        md:left-56
+        overflow-y-auto
+        md:overflow-y-auto
+        p-4
+      "
+      style="height: calc(100% - 3rem)"
+      id="main"
+    >
+      <div
+        id="breadcrumbs"
+        class="
+          bg-white
+          flex
+          mb-3
+          px-4
+          py-3
+          rounded-md
+          shadow
+          space-x-2.5
+          text-xs
+        "
+      >
         <a href="#" class="hover:text-blue-500">Home</a>
         <span>/</span>
         <a href="#" class="hover:text-blue-500">Submenu</a>
@@ -426,6 +476,9 @@
         ratione hic magni maiores temporibus.
       </p>
     </main>
+    <!-- Main : End -->
+    <!-- Scripts : Start -->
     <script src="./scripts/sidebar-toggle.js"></script>
+    <!-- Scripts : ENd -->
   </body>
 </html>
