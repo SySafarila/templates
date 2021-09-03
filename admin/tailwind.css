@@ -58,6 +58,11 @@
     @apply font-medium text-gray-800;
   }
 
+  /* indent */
+  .text-indent {
+    text-indent: 1.5rem;
+  }
+
   /* touch highlight */
   .tap-highlight-transparent {
     -webkit-tap-highlight-color: transparent;
