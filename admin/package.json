@@ -1,0 +1,17 @@
+{
+  "name": "template-admin",
+  "version": "1.0.0",
+  "description": "Admin template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tailwindcss -i ./tailwind.css -o ./style.css",
+    "compile-watch": "npx tailwindcss -i ./tailwind.css -o ./style.css -w"
+  },
+  "author": "SySafarila",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "tailwindcss": "^2.2.9"
+  }
+}
