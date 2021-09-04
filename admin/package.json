@@ -11,7 +11,6 @@
   "author": "SySafarila",
   "license": "ISC",
   "dependencies": {
-    "@popperjs/core": "^2.10.1",
     "tailwindcss": "^2.2.9"
   }
 }
