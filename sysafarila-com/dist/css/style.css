@@ -23350,6 +23350,54 @@ video {
   letter-spacing: 0.1em;
 }
 
+.hover\:tracking-tighter:hover {
+  letter-spacing: -0.05em;
+}
+
+.hover\:tracking-tight:hover {
+  letter-spacing: -0.025em;
+}
+
+.hover\:tracking-normal:hover {
+  letter-spacing: 0em;
+}
+
+.hover\:tracking-wide:hover {
+  letter-spacing: 0.025em;
+}
+
+.hover\:tracking-wider:hover {
+  letter-spacing: 0.05em;
+}
+
+.hover\:tracking-widest:hover {
+  letter-spacing: 0.1em;
+}
+
+.focus\:tracking-tighter:focus {
+  letter-spacing: -0.05em;
+}
+
+.focus\:tracking-tight:focus {
+  letter-spacing: -0.025em;
+}
+
+.focus\:tracking-normal:focus {
+  letter-spacing: 0em;
+}
+
+.focus\:tracking-wide:focus {
+  letter-spacing: 0.025em;
+}
+
+.focus\:tracking-wider:focus {
+  letter-spacing: 0.05em;
+}
+
+.focus\:tracking-widest:focus {
+  letter-spacing: 0.1em;
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -55757,6 +55805,54 @@ video {
     letter-spacing: 0.1em;
   }
 
+  .sm\:hover\:tracking-tighter:hover {
+    letter-spacing: -0.05em;
+  }
+
+  .sm\:hover\:tracking-tight:hover {
+    letter-spacing: -0.025em;
+  }
+
+  .sm\:hover\:tracking-normal:hover {
+    letter-spacing: 0em;
+  }
+
+  .sm\:hover\:tracking-wide:hover {
+    letter-spacing: 0.025em;
+  }
+
+  .sm\:hover\:tracking-wider:hover {
+    letter-spacing: 0.05em;
+  }
+
+  .sm\:hover\:tracking-widest:hover {
+    letter-spacing: 0.1em;
+  }
+
+  .sm\:focus\:tracking-tighter:focus {
+    letter-spacing: -0.05em;
+  }
+
+  .sm\:focus\:tracking-tight:focus {
+    letter-spacing: -0.025em;
+  }
+
+  .sm\:focus\:tracking-normal:focus {
+    letter-spacing: 0em;
+  }
+
+  .sm\:focus\:tracking-wide:focus {
+    letter-spacing: 0.025em;
+  }
+
+  .sm\:focus\:tracking-wider:focus {
+    letter-spacing: 0.05em;
+  }
+
+  .sm\:focus\:tracking-widest:focus {
+    letter-spacing: 0.1em;
+  }
+
   .sm\:text-transparent {
     color: transparent;
   }
@@ -87773,6 +87869,54 @@ video {
   }
 
   .md\:tracking-widest {
+    letter-spacing: 0.1em;
+  }
+
+  .md\:hover\:tracking-tighter:hover {
+    letter-spacing: -0.05em;
+  }
+
+  .md\:hover\:tracking-tight:hover {
+    letter-spacing: -0.025em;
+  }
+
+  .md\:hover\:tracking-normal:hover {
+    letter-spacing: 0em;
+  }
+
+  .md\:hover\:tracking-wide:hover {
+    letter-spacing: 0.025em;
+  }
+
+  .md\:hover\:tracking-wider:hover {
+    letter-spacing: 0.05em;
+  }
+
+  .md\:hover\:tracking-widest:hover {
+    letter-spacing: 0.1em;
+  }
+
+  .md\:focus\:tracking-tighter:focus {
+    letter-spacing: -0.05em;
+  }
+
+  .md\:focus\:tracking-tight:focus {
+    letter-spacing: -0.025em;
+  }
+
+  .md\:focus\:tracking-normal:focus {
+    letter-spacing: 0em;
+  }
+
+  .md\:focus\:tracking-wide:focus {
+    letter-spacing: 0.025em;
+  }
+
+  .md\:focus\:tracking-wider:focus {
+    letter-spacing: 0.05em;
+  }
+
+  .md\:focus\:tracking-widest:focus {
     letter-spacing: 0.1em;
   }
 
@@ -119795,6 +119939,54 @@ video {
     letter-spacing: 0.1em;
   }
 
+  .lg\:hover\:tracking-tighter:hover {
+    letter-spacing: -0.05em;
+  }
+
+  .lg\:hover\:tracking-tight:hover {
+    letter-spacing: -0.025em;
+  }
+
+  .lg\:hover\:tracking-normal:hover {
+    letter-spacing: 0em;
+  }
+
+  .lg\:hover\:tracking-wide:hover {
+    letter-spacing: 0.025em;
+  }
+
+  .lg\:hover\:tracking-wider:hover {
+    letter-spacing: 0.05em;
+  }
+
+  .lg\:hover\:tracking-widest:hover {
+    letter-spacing: 0.1em;
+  }
+
+  .lg\:focus\:tracking-tighter:focus {
+    letter-spacing: -0.05em;
+  }
+
+  .lg\:focus\:tracking-tight:focus {
+    letter-spacing: -0.025em;
+  }
+
+  .lg\:focus\:tracking-normal:focus {
+    letter-spacing: 0em;
+  }
+
+  .lg\:focus\:tracking-wide:focus {
+    letter-spacing: 0.025em;
+  }
+
+  .lg\:focus\:tracking-wider:focus {
+    letter-spacing: 0.05em;
+  }
+
+  .lg\:focus\:tracking-widest:focus {
+    letter-spacing: 0.1em;
+  }
+
   .lg\:text-transparent {
     color: transparent;
   }
@@ -151814,6 +152006,54 @@ video {
     letter-spacing: 0.1em;
   }
 
+  .xl\:hover\:tracking-tighter:hover {
+    letter-spacing: -0.05em;
+  }
+
+  .xl\:hover\:tracking-tight:hover {
+    letter-spacing: -0.025em;
+  }
+
+  .xl\:hover\:tracking-normal:hover {
+    letter-spacing: 0em;
+  }
+
+  .xl\:hover\:tracking-wide:hover {
+    letter-spacing: 0.025em;
+  }
+
+  .xl\:hover\:tracking-wider:hover {
+    letter-spacing: 0.05em;
+  }
+
+  .xl\:hover\:tracking-widest:hover {
+    letter-spacing: 0.1em;
+  }
+
+  .xl\:focus\:tracking-tighter:focus {
+    letter-spacing: -0.05em;
+  }
+
+  .xl\:focus\:tracking-tight:focus {
+    letter-spacing: -0.025em;
+  }
+
+  .xl\:focus\:tracking-normal:focus {
+    letter-spacing: 0em;
+  }
+
+  .xl\:focus\:tracking-wide:focus {
+    letter-spacing: 0.025em;
+  }
+
+  .xl\:focus\:tracking-wider:focus {
+    letter-spacing: 0.05em;
+  }
+
+  .xl\:focus\:tracking-widest:focus {
+    letter-spacing: 0.1em;
+  }
+
   .xl\:text-transparent {
     color: transparent;
   }
@@ -183830,6 +184070,54 @@ video {
   }
 
   .\32xl\:tracking-widest {
+    letter-spacing: 0.1em;
+  }
+
+  .\32xl\:hover\:tracking-tighter:hover {
+    letter-spacing: -0.05em;
+  }
+
+  .\32xl\:hover\:tracking-tight:hover {
+    letter-spacing: -0.025em;
+  }
+
+  .\32xl\:hover\:tracking-normal:hover {
+    letter-spacing: 0em;
+  }
+
+  .\32xl\:hover\:tracking-wide:hover {
+    letter-spacing: 0.025em;
+  }
+
+  .\32xl\:hover\:tracking-wider:hover {
+    letter-spacing: 0.05em;
+  }
+
+  .\32xl\:hover\:tracking-widest:hover {
+    letter-spacing: 0.1em;
+  }
+
+  .\32xl\:focus\:tracking-tighter:focus {
+    letter-spacing: -0.05em;
+  }
+
+  .\32xl\:focus\:tracking-tight:focus {
+    letter-spacing: -0.025em;
+  }
+
+  .\32xl\:focus\:tracking-normal:focus {
+    letter-spacing: 0em;
+  }
+
+  .\32xl\:focus\:tracking-wide:focus {
+    letter-spacing: 0.025em;
+  }
+
+  .\32xl\:focus\:tracking-wider:focus {
+    letter-spacing: 0.05em;
+  }
+
+  .\32xl\:focus\:tracking-widest:focus {
     letter-spacing: 0.1em;
   }
 

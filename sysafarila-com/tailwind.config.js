@@ -9,6 +9,7 @@ module.exports = {
       grayscale: ["hover", "focus"],
       contrast: ["hover", "focus"],
       borderRadius: ["hover", "focus"],
+      letterSpacing: ["hover", "focus"],
     },
   },
   plugins: [],
