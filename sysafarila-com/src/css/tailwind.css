@@ -24,3 +24,11 @@
 .touch-highlight-transparent {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* text shadow */
+.text-shadow {
+  text-shadow: 0px 0px transparent;
+}
+.text-shadow:hover {
+  text-shadow: 4px 4px grey;
+}
