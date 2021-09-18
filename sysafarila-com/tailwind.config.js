@@ -7,6 +7,8 @@ module.exports = {
   variants: {
     extend: {
       grayscale: ["hover", "focus"],
+      contrast: ["hover", "focus"],
+      borderRadius: ["hover", "focus"],
     },
   },
   plugins: [],
