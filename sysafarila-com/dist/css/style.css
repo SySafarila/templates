@@ -32268,6 +32268,18 @@ video {
   font-family: "Montserrat", sans-serif;
 }
 
+.main-landing-page {
+  height: calc(100vh - 68px);
+}
+
+/* xl */
+
+@media (min-width: 1280px) {
+  .main-landing-page {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
