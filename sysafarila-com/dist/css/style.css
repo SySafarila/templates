@@ -33069,7 +33069,7 @@ video {
 }
 
 .text-shadow:hover {
-  text-shadow: 4px 4px grey;
+  text-shadow: 0.05em 0.05em grey
 }
 
 @media (min-width: 640px) {
