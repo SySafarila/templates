@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="bg-gray-700 text-white">
+    <!-- dropdown : start -->
+    <div data-dropdown="dropdown" tabindex="-1">
+      <span data-dropdown-trigger="dropdown">Drowpdown</span>
+      <div class="flex-col hidden" data-dropdown-items="dropdown">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+      </div>
+    </div>
+    <div data-dropdown="dropdown" tabindex="-1">
+      <span data-dropdown-trigger="dropdown">Drowpdown 2</span>
+      <div class="flex-col hidden" data-dropdown-items="dropdown">
+        <span>B 1</span>
+        <span>B 2</span>
+        <span>B 3</span>
+        <span>B 4</span>
+      </div>
+    </div>
+    <!-- dropdown : end -->
+
+    <!-- scripts : start -->
+    <script>
+      //   document
+      //     .querySelector("[data-dropdown]")
+      //     .addEventListener("focusin", (e) => {
+      //       const items = e.target.children[1];
+      //       items.classList.replace("hidden", "flex");
+      //     });
+      //   document
+      //     .querySelector("[data-dropdown]")
+      //     .addEventListener("focusout", (e) => {
+      //       const items = e.target.children[1];
+      //       items.classList.replace("flex", "hidden");
+      //     });
+      const dropdowns = document.querySelectorAll("[data-dropdown]");
+      dropdowns.forEach((dropdown) => {
+        dropdown.addEventListener("focusin", (e) => {
+          const items = e.target.children[1];
+          items.classList.replace("hidden", "flex");
+        });
+        dropdown
+          .addEventListener("focusout", (e) => {
+            const items = e.target.children[1];
+            items.classList.replace("flex", "hidden");
+          });
+      });
+    </script>
+    <!-- scripts : end -->
+  </body>
+</html>
