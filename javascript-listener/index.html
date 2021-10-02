@@ -9,8 +9,8 @@
   </head>
   <body class="bg-gray-700 text-white">
     <!-- dropdown : start -->
-    <div data-dropdown="dropdown" tabindex="-1">
-      <span data-dropdown-trigger="dropdown">Drowpdown</span>
+    <div data-dropdown="dropdown">
+      <span data-dropdown-trigger="dropdown" tabindex="-1">Drowpdown</span>
       <div class="flex-col hidden" data-dropdown-items="dropdown">
         <span>1</span>
         <span>2</span>
@@ -18,9 +18,9 @@
         <span>4</span>
       </div>
     </div>
-    <div data-dropdown="dropdown" tabindex="-1">
-      <span data-dropdown-trigger="dropdown">Drowpdown 2</span>
-      <div class="flex-col hidden" data-dropdown-items="dropdown">
+    <div data-dropdown="dropdown-2">
+      <span data-dropdown-trigger="dropdown-2" tabindex="-1">Drowpdown 2</span>
+      <div class="flex-col hidden" data-dropdown-items="dropdown-2">
         <span>B 1</span>
         <span>B 2</span>
         <span>B 3</span>
@@ -31,27 +31,27 @@
 
     <!-- scripts : start -->
     <script>
-      //   document
-      //     .querySelector("[data-dropdown]")
-      //     .addEventListener("focusin", (e) => {
-      //       const items = e.target.children[1];
-      //       items.classList.replace("hidden", "flex");
-      //     });
-      //   document
-      //     .querySelector("[data-dropdown]")
-      //     .addEventListener("focusout", (e) => {
-      //       const items = e.target.children[1];
-      //       items.classList.replace("flex", "hidden");
-      //     });
       const dropdowns = document.querySelectorAll("[data-dropdown]");
       dropdowns.forEach((dropdown) => {
-        dropdown.addEventListener("focusin", (e) => {
-          const items = e.target.children[1];
-          items.classList.replace("hidden", "flex");
-        });
-        dropdown
+        document
+          .querySelector(
+            `[data-dropdown-trigger="${dropdown.dataset.dropdown}"]`
+          )
+          .addEventListener("focusin", (e) => {
+            const items = document.querySelector(
+              `[data-dropdown-items="${dropdown.dataset.dropdown}"]`
+            );
+            items.classList.replace("hidden", "flex");
+          });
+
+        document
+          .querySelector(
+            `[data-dropdown-trigger="${dropdown.dataset.dropdown}"]`
+          )
           .addEventListener("focusout", (e) => {
-            const items = e.target.children[1];
+            const items = document.querySelector(
+              `[data-dropdown-items="${dropdown.dataset.dropdown}"]`
+            );
             items.classList.replace("flex", "hidden");
           });
       });
