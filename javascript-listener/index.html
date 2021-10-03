@@ -27,33 +27,23 @@
       const dropdowns = document.querySelectorAll("#dropdown");
 
       dropdowns.forEach((data) => {
-        // data.addEventListener("click", (e) => {
-        //   e.preventDefault();
-        //   if (e.target.id == "dropdown-toggle") {
-        //     // console.log(e.target.parentElement.querySelector('div#dropdown-items'));
-        //     e.target.parentElement.querySelector("div#dropdown-items").style =
-        //       null;
-        //   }
-        // });
-        // console.log(data.querySelector('a'));
         data
           .querySelector("a#dropdown-toggle")
-          .addEventListener("focus", (e) => {
-            // console.log(e.target);
+          .addEventListener("click", (e) => {
+            e.preventDefault();
             const dropdownItems =
               e.target.parentElement.querySelector("div#dropdown-items");
             dropdownItems.style = null;
-            console.log(dropdownItems);
+            // console.log(dropdownItems);
           });
 
         data
           .querySelector("a#dropdown-toggle")
           .addEventListener("blur", (e) => {
-            // console.log(e.target);
             const dropdownItems =
               e.target.parentElement.querySelector("div#dropdown-items");
             dropdownItems.style = "display: none";
-            console.log(dropdownItems);
+            // console.log(dropdownItems);
           });
       });
     </script>
