@@ -8,54 +8,34 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body class="bg-gray-700 text-white">
-    <!-- dropdown : start -->
-    <div data-dropdown="dropdown">
-      <span data-dropdown-trigger="dropdown" tabindex="-1">Drowpdown</span>
-      <div class="flex-col hidden" data-dropdown-items="dropdown">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+    <div id="dropdown">
+      <a href="#" id="dropdown-toggle">Toggle</a>
+      <div class="flex flex-col" style="display: none" id="dropdown-items">
+        <span>One</span>
+        <span>Two</span>
       </div>
     </div>
-    <div data-dropdown="dropdown-2">
-      <span data-dropdown-trigger="dropdown-2" tabindex="-1">Drowpdown 2</span>
-      <div class="flex-col hidden" data-dropdown-items="dropdown-2">
-        <span>B 1</span>
-        <span>B 2</span>
-        <span>B 3</span>
-        <span>B 4</span>
+    <div id="dropdown">
+      <a href="#" id="dropdown-toggle">Toggle 2</a>
+      <div class="flex flex-col" style="display: none" id="dropdown-items">
+        <span>One X</span>
+        <span>Two X</span>
       </div>
     </div>
-    <!-- dropdown : end -->
 
-    <!-- scripts : start -->
     <script>
-      const dropdowns = document.querySelectorAll("[data-dropdown]");
-      dropdowns.forEach((dropdown) => {
-        document
-          .querySelector(
-            `[data-dropdown-trigger="${dropdown.dataset.dropdown}"]`
-          )
-          .addEventListener("focusin", (e) => {
-            const items = document.querySelector(
-              `[data-dropdown-items="${dropdown.dataset.dropdown}"]`
-            );
-            items.classList.replace("hidden", "flex");
-          });
+      const dropdowns = document.querySelectorAll("#dropdown");
 
-        document
-          .querySelector(
-            `[data-dropdown-trigger="${dropdown.dataset.dropdown}"]`
-          )
-          .addEventListener("focusout", (e) => {
-            const items = document.querySelector(
-              `[data-dropdown-items="${dropdown.dataset.dropdown}"]`
-            );
-            items.classList.replace("flex", "hidden");
-          });
+      dropdowns.forEach((data) => {
+        data.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (e.target.id == "dropdown-toggle") {
+            // console.log(e.target.parentElement.querySelector('div#dropdown-items'));
+            e.target.parentElement.querySelector("div#dropdown-items").style =
+              null;
+          }
+        });
       });
     </script>
-    <!-- scripts : end -->
   </body>
 </html>
