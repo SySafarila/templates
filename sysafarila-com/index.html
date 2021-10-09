@@ -67,7 +67,14 @@
           >
         </div>
         <div
-          class="font-family-Montserrat gap-x-2 hidden text-gray-500 w-full xl:flex xl:flex-col xl:gap-y-3 xl:text-lg"
+          class="
+            font-family-Montserrat
+            gap-x-2
+            hidden
+            text-gray-500
+            w-full
+            xl:flex xl:flex-col xl:gap-y-3 xl:text-lg
+          "
         >
           <!-- <a href="#" class="capitalize duration-500 hover:tracking-widest text-gray-800 tracking-normal transition-all">home</a> -->
           <a
@@ -119,20 +126,105 @@
             "
             >account</a
           >
-          <div class="flex items-center justify-between">
-            <a
+          <div data-dropdown="true">
+            <button
               href="#"
               class="
-                hover:text-gray-800
                 capitalize
                 duration-500
-                hover:tracking-widest
+                flex
+                hover:text-gray-800 hover:tracking-widest
+                items-center
+                justify-between
                 tracking-normal
                 transition-all
+                w-full
               "
-              >extras</a
+              data-dropdown-trigger="true"
             >
-            <span class="material-icons">keyboard_arrow_down</span>
+              <span data-dropdown-title="true">extras</span
+              ><span class="material-icons transition-all ease-in-out duration-500 transform" data-dropdown-icon="true">keyboard_arrow_down</span>
+            </button>
+            <div
+              class="flex flex-col gap-y-3 pl-3 pt-3"
+              data-dropdown-items="true"
+              style="display: none;"
+            >
+              <a
+                href="#"
+                class="
+                  hover:text-gray-800
+                  capitalize
+                  duration-500
+                  hover:tracking-widest
+                  tracking-normal
+                  transition-all
+                "
+                >item 1</a
+              >
+              <a
+                href="#"
+                class="
+                  hover:text-gray-800
+                  capitalize
+                  duration-500
+                  hover:tracking-widest
+                  tracking-normal
+                  transition-all
+                "
+                >item 2</a
+              >
+            </div>
+          </div>
+          <div data-dropdown="true">
+            <button
+              href="#"
+              class="
+                capitalize
+                duration-500
+                flex
+                hover:text-gray-800 hover:tracking-widest
+                items-center
+                justify-between
+                tracking-normal
+                transition-all
+                w-full
+              "
+              data-dropdown-trigger="true"
+            >
+              <span data-dropdown-title="true">extras</span
+              ><span class="material-icons transition-all ease-in-out duration-500 transform" data-dropdown-icon="true">keyboard_arrow_down</span>
+            </button>
+            <div
+              class="flex flex-col gap-y-3 pl-3 pt-3"
+              data-dropdown-items="true"
+              style="display: none;"
+            >
+              <a
+                href="#"
+                class="
+                  hover:text-gray-800
+                  capitalize
+                  duration-500
+                  hover:tracking-widest
+                  tracking-normal
+                  transition-all
+                "
+                >item 1</a
+              >
+              <a
+                href="#"
+                class="
+                  hover:text-gray-800
+                  capitalize
+                  duration-500
+                  hover:tracking-widest
+                  tracking-normal
+                  transition-all
+                "
+                >item 2</a
+              >
+            </div>
           </div>
         </div>
         <div class="flex-col hidden italic text-gray-500 text-lg xl:flex">
@@ -284,5 +376,24 @@
         <a href="#" class="hover:text-gray-800">Account</a>
       </div>
     </main>
+
+    <script>
+      const dropdownTrigger = document.querySelectorAll("[data-dropdown-trigger]");
+
+      dropdownTrigger.forEach(data => {
+        data.addEventListener('focusin', (e) => {
+          let icon = e.target.parentElement.querySelector("[data-dropdown-icon]");
+          let items = e.target.parentElement.querySelector("[data-dropdown-items]");
+          items.style = "display: flex !important";
+          icon.classList.add('rotate-180');
+        })
+        data.addEventListener('focusout', (e) => {
+          let icon = e.target.parentElement.querySelector("[data-dropdown-icon]");
+          let items = e.target.parentElement.querySelector("[data-dropdown-items]");
+          items.style = "display: none !important";
+          icon.classList.remove('rotate-180');
+        })
+      })
+    </script>
   </body>
 </html>
