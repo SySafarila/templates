@@ -14,7 +14,21 @@
   </head>
   <body class="bg-gray-100 relative touch-highlight-transparent">
     <nav
-      class="bg-white fixed flex justify-between p-5 w-full xl:border-r xl:flex-col xl:h-screen xl:items-center xl:justify-center xl:px-24 xl:w-96"
+      class="
+        bg-white
+        fixed
+        flex
+        justify-between
+        p-5
+        w-full
+        xl:border-r
+        xl:flex-col
+        xl:h-screen
+        xl:items-center
+        xl:justify-center
+        xl:px-24
+        xl:w-96
+      "
     >
       <div
         class="
@@ -127,10 +141,13 @@
     </nav>
     <main
       class="
-        flex
+        flex flex-col
+        gap-y-5
         items-center
+        justify-center
         main-landing-page
-        xl:absolute xl:bottom-0 xl:left-96 xl:right-0 xl:top-0
+        p-5
+        relative
       "
     >
       <div
@@ -138,10 +155,10 @@
           flex flex-col
           gap-y-7
           items-center
-          px-5
           w-full
-          xl:flex-row xl:gap-x-16 xl:justify-center xl:w-screen
+          xl:flex-row xl:gap-x-16 xl:justify-center
         "
+        style="padding-bottom: 56px"
       >
         <img
           src="https://avatars.githubusercontent.com/u/57931052?v=4"
@@ -156,7 +173,10 @@
             w-1/2
             xl:w-1/5
           "
-          style="animation: morph 8s ease-in-out infinite 1s;border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%"
+          style="
+            animation: morph 8s ease-in-out infinite 1s;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+          "
         />
         <div class="flex flex-col gap-y-7 items-center xl:items-start xl:w-min">
           <h1
