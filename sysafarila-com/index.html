@@ -382,16 +382,12 @@
 
       dropdownTrigger.forEach(data => {
         data.addEventListener('focusin', (e) => {
-          let icon = e.target.parentElement.querySelector("[data-dropdown-icon]");
-          let items = e.target.parentElement.querySelector("[data-dropdown-items]");
-          items.style = "display: flex !important";
-          icon.classList.add('rotate-180');
+          let parent = e.target.parentElement;
+          parent.dataset.dropdown = 'show';
         })
         data.addEventListener('focusout', (e) => {
-          let icon = e.target.parentElement.querySelector("[data-dropdown-icon]");
-          let items = e.target.parentElement.querySelector("[data-dropdown-items]");
-          items.style = "display: none !important";
-          icon.classList.remove('rotate-180');
+          let parent = e.target.parentElement;
+          parent.dataset.dropdown = 'true';
         })
       })
     </script>

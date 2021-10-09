@@ -33098,6 +33098,14 @@ video {
   padding-top: calc(68px + 1.5rem);
 }
 
+[data-dropdown="show"] [data-dropdown-icon] {
+  transform: rotate(180deg);
+}
+
+[data-dropdown="show"] [data-dropdown-items] {
+  display: flex !important;
+}
+
 /* xl */
 
 @media (min-width: 1280px) {
