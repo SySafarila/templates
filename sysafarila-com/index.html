@@ -143,12 +143,22 @@
               data-dropdown-trigger="true"
             >
               <span data-dropdown-title="true">extras</span
-              ><span class="material-icons transition-all ease-in-out duration-500 transform" data-dropdown-icon="true">keyboard_arrow_down</span>
+              ><span
+                class="
+                  material-icons
+                  transition-all
+                  ease-in-out
+                  duration-500
+                  transform
+                "
+                data-dropdown-icon="true"
+                >keyboard_arrow_down</span
+              >
             </button>
             <div
               class="flex flex-col gap-y-3 pl-3 pt-3"
               data-dropdown-items="true"
-              style="display: none;"
+              style="display: none"
             >
               <a
                 href="#"
@@ -192,13 +202,23 @@
               "
               data-dropdown-trigger="true"
             >
-              <span data-dropdown-title="true">extras</span
-              ><span class="material-icons transition-all ease-in-out duration-500 transform" data-dropdown-icon="true">keyboard_arrow_down</span>
+              <span data-dropdown-title="true">extras x</span
+              ><span
+                class="
+                  material-icons
+                  transition-all
+                  ease-in-out
+                  duration-500
+                  transform
+                "
+                data-dropdown-icon="true"
+                >keyboard_arrow_down</span
+              >
             </button>
             <div
               class="flex flex-col gap-y-3 pl-3 pt-3"
               data-dropdown-items="true"
-              style="display: none;"
+              style="display: none"
             >
               <a
                 href="#"
@@ -210,7 +230,7 @@
                   tracking-normal
                   transition-all
                 "
-                >item 1</a
+                >item 1X</a
               >
               <a
                 href="#"
@@ -222,7 +242,7 @@
                   tracking-normal
                   transition-all
                 "
-                >item 2</a
+                >item 2X</a
               >
             </div>
           </div>
@@ -378,18 +398,19 @@
     </main>
 
     <script>
-      const dropdownTrigger = document.querySelectorAll("[data-dropdown-trigger]");
+      const dropdowns = document.querySelectorAll('[data-dropdown="true"]');
 
-      dropdownTrigger.forEach(data => {
-        data.addEventListener('focusin', (e) => {
-          let parent = e.target.parentElement;
-          parent.dataset.dropdown = 'show';
-        })
-        data.addEventListener('focusout', (e) => {
-          let parent = e.target.parentElement;
-          parent.dataset.dropdown = 'true';
-        })
-      })
+      dropdowns.forEach((dropdown) => {
+        let dropdownTrigger = dropdown.querySelector(
+          '[data-dropdown-trigger="true"]'
+        );
+        dropdownTrigger.addEventListener("focusin", () => {
+          dropdown.dataset.dropdown = "show";
+        });
+        dropdownTrigger.addEventListener("focusout", () => {
+          dropdown.dataset.dropdown = true;
+        });
+      });
     </script>
   </body>
 </html>
