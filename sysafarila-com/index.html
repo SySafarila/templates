@@ -404,11 +404,18 @@
         let dropdownTrigger = dropdown.querySelector(
           '[data-dropdown-trigger="true"]'
         );
-        dropdownTrigger.addEventListener("focusin", () => {
+        dropdownTrigger.addEventListener("click", (e) => {
+          e.stopPropagation();
           dropdown.dataset.dropdown = "show";
+          console.count("y");
         });
-        dropdownTrigger.addEventListener("focusout", () => {
+      });
+
+      window.addEventListener("click", (e) => {
+        const dropdowns = document.querySelectorAll('[data-dropdown="show"]');
+        dropdowns.forEach((dropdown) => {
           dropdown.dataset.dropdown = true;
+          console.count("x");
         });
       });
     </script>
